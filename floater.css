@@ -1,0 +1,122 @@
+#sticky-slider-desk { display: none; }
+#sticky-slider-only-mobile { display: none; }
+/*@media screen and (min-width: 767px) {
+ 	 
+ 	#sticky-slider-desk { display: block; }
+	#sticky-slider-only-mobile { display: none; }
+  }*/
+@media screen and (max-width : 768px) {
+    #sticky-slider-desk { display: none; }
+	#sticky-slider-only-mobile { display: inline;
+	position: fixed;
+  bottom: 1rem;#8rem to avoid cookie consent
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  border: none;
+  border-style: solid;
+  border-color: #baa382;
+  border-radius: 30px;
+  background-color: #baa382; /*#0b4f34;*/
+  z-index: 10000;
+  box-shadow: 0 0 50px 0 rgba(0,0,0,.1);
+  padding: 1rem 4rem;
+  margin: 1rem 0;
+  left: 1rem;
+  font-family:'Playfair Display',serif;
+  letter-spacing: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+	}
+  #sticky-slider-only-mobile-right { display: inline;
+  position: fixed;
+  bottom: 1rem;#8rem to avoid cookie consent
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  border: none;
+  border-style: solid;
+  border-color: #baa382;
+  border-radius: 30px;
+  background-color: #baa382; /*#0b4f34;*/
+  z-index: 10000;
+  box-shadow: 0 0 50px 0 rgba(0,0,0,.4);
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  right: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+	}
+  }
+
+.fab-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  z-index: 10000;
+  cursor: pointer;
+}
+
+.fab-icon-holder {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #baa382;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fab-icon-holder:hover {
+  opacity: 0.8;
+}
+
+.fab-icon-holder i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.fab {
+  width: 60px;
+  height: 60px;
+  background: #baa382;
+}
+
+.fab-options {
+  list-style-type: none;
+  margin: 0;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: scale(0);
+  transform-origin: 85% bottom;
+}
+
+.fab:hover+.fab-options,
+.fab-options:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fab-options li {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.fab-label {
+  padding: 8px 30px;
+  align-self: center;
+  user-select: none;
+  white-space: nowrap;
+  border-radius: 99px;
+  font-size: 16px;
+  font-family:'Playfair Display',serif; /*'Open Sans',sans-serif*/
+  letter-spacing: 2px;
+  background: #ffffff;/*#baa382;*/
+  /*color: #ffffff;*/
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  margin-right: 30px;
+}	
